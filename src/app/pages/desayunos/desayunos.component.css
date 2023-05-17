@@ -1,0 +1,181 @@
+.navbar-container {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1A2A49;
+    z-index: 999;
+  }
+  
+  .logo-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 20px;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .logo {
+    max-width: 110%;
+    height: auto;
+  }
+
+  
+
+
+.toggle-icon {
+  display: inline-block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.toggle-icon::before,
+.toggle-icon::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggle-icon::before {
+  top: -8px;
+}
+
+.toggle-icon::after {
+  bottom: -8px;
+}
+
+.toggle-icon.open::before {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.toggle-icon.open::after {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+
+
+.navbar {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 250px;
+    height: calc(100% - 60px);
+    background-color: #1A2A49;
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+.navbar.open {
+    right: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    margin-bottom: 10px;
+}
+
+
+.transparent-button {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid white;
+    margin: 10px 0;
+}
+
+.toggle-button {
+    position: fixed;
+
+    left: 90%;
+    transform: translateX(-50%);
+    /* background-color: rgb(0, 0, 0); */
+    background-color: transparent;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.icon {
+    width: 35px;
+    /* Ajusta el valor según tus necesidades */
+    height: 35px;
+    /* Ajusta el valor según tus necesidades */
+}
+
+
+
+
+
+ 
+
+/* .background-image-container {
+  background-image: url('/assets/Desayunos/Desayuno.png');  
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  position: relative;
+  transform-origin: top left;
+  transform: scale(1);
+  touch-action: none; /* Evita el comportamiento predeterminado de desplazamiento táctil 
+}
+*/
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ajusta el valor según tus necesidades */
+  overflow-y: auto; /* Hace que la imagen sea scrollable verticalmente */
+  padding-top: 100px; /* Ajusta la distancia entre el navbar y la imagen */
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2200px; /* Ajusta el valor según la altura de tu imagen */
+  background-image: url('/assets/Nuevas/Desayuno1.png');  /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen de fondo */
+  background-size: contain; /* La imagen conserva su tamaño original */
+  background-position: top center;
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  z-index: -1;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2200px; /* Ajusta el valor según la altura deseada */
+  background-color: rgb(255, 255, 255); /* Cambia "rgba(255, 0, 0, 0.5)" por el color deseado y el nivel de opacidad */
+  background-position: top center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+

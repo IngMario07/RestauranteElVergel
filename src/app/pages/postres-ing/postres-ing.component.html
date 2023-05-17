@@ -1,0 +1,82 @@
+<div class="navbar-container">
+
+    <div class="logo-container">
+        <button class="logo-button" [routerLink]="['/inicio']">
+            <img src="assets/Logo/Logo.png" alt="Logo" class="logo">
+        </button>
+    </div>
+
+    <button (click)="toggleNavbar()" class="toggle-button">
+        <span class="toggle-icon"></span>
+    </button>
+
+    <nav [ngClass]="{'open': avbarOpen}" class="navbar">
+
+        <ul>
+
+            <li>
+                <img class="icon" src="assets/icons/Icono Desayuno.png" alt="Icono Desayunos">
+                <button class="transparent-button" [routerLink]="['/desayunos']"><strong>Desayunos</strong></button>
+                <p style="color: white; margin: 10px; font-size: 13px;">10:00 - 12:30</p>
+            </li>
+
+            <li>
+                <img class="icon" src="assets/icons/Icono Desayuno.png" alt="Icono Desayunos">
+                <button class="transparent-button" [routerLink]="['/breacfast']"><strong> Breakfast </strong></button>
+                <p style="color: white; margin: 10px; font-size: 13px;">10:00 - 12:30</p>
+            </li>
+
+            <hr class="divider" />
+
+            <li>
+                <img class="icon" src="assets/icons/Icono Comida.png" alt="Icono Comidas">
+                <button class="transparent-button" [routerLink]="['/comida']"><strong> Comida </strong></button>
+                <p style="color: white; margin: 10px; font-size: 13px; ">12:30 - 6:00</p>
+            </li>
+
+            <li>
+                <img class="icon" src="assets/icons/Icono Comida.png" alt="Icono Comidas">
+                <button class="transparent-button" [routerLink]="['/lunch']"><strong> Lunch </strong></button>
+                <p style="color: white; margin: 10px; font-size: 13px;">12:30 - 6:00</p>
+            </li>
+
+            <hr class="divider" />
+
+            <li>
+                <img class="icon" src="assets/icons/Icono Postres.png" alt="Icono Postres">
+                <button class="transparent-button" [routerLink]="['/postres']"><strong> Postres </strong></button>
+                
+            </li>
+
+            <li>
+                <img class="icon" src="assets/icons/Icono Postres.png" alt="Icono Postres">
+                <button class="transparent-button" [routerLink]="['/postres-ing']"><strong> Desserts </strong></button>
+                
+            </li>
+
+            <hr class="divider" />
+
+            <li>
+                <img class="icon" src="assets/icons/Icono_Bebidas.png" alt="Icono Bebidas">
+                <button class="transparent-button" [routerLink]="['/bebidas']"><strong> Bebidas </strong></button>
+            </li>
+
+            <hr class="divider" />
+
+            <li>
+                <img class="icon" src="assets/icons/Icono Vinos.png" alt="Icono Vinos">
+                <button class="transparent-button" [routerLink]="['/vinos']"><strong> Vinos </strong></button>
+            </li>
+
+            <div class="logo-container">
+                <img src="assets/Logo/Logo.png" alt="Logo" class="logo">
+            </div>
+
+        </ul>
+    </nav>
+</div>
+
+<br>
+<br><br>
+<br><br>
+<div class="container"></div>
